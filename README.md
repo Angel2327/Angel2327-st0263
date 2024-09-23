@@ -45,14 +45,14 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 
 #### Lenguaje de programación: Python 3.x
 #### Librerías:
-- grpc (versión 1.66.1 o superior)
-- protobuf (versión 3.x)
-- concurrent.futures
-- threading
-- os
-- sys
-- socket
-- queue
+#### grpc (versión 1.66.1 o superior)
+#### protobuf (versión 3.x)
+#### concurrent.futures
+#### threading
+#### os
+#### sys
+#### socket
+#### queue
 
 ## detalles del desarrollo.
 El código del cliente y del servidor se encuentra en los archivos peer_client.py y tracker_server.py, respectivamente.
@@ -63,12 +63,12 @@ Los archivos p2p_pb2.py y p2p_pb2_grpc.py son generados automáticamente a parti
 
 # Organización del código
 #### Estructura de directorios:
-#### /src
-   ####  /tracker.py
-   ####  /peer.py
-   ####  /proto_files/
-   ####      /tracker.proto
-   ####      /peer.proto
+- /src
+-   /tracker.py
+-   /peer.py``
+-   /proto_files/
+-    /tracker.proto
+-    /peer.proto
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
