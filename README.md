@@ -24,7 +24,7 @@ En esta actividad se implementó una red P2P con un tracker que facilita el desc
 - Definición de servicios y mensajes en un archivo .proto.
 - Manejo de múltiples peticiones concurrentes en el servidor utilizando ThreadPoolExecutor.
 
-## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
+## 1.2.  Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 - Mecanismos de desconexion para tolerancia de fallas: El tracker no cuenta con un mecanismo robusto para manejar caídas de nodos o desconexiones inesperadas, lo que podría generar inconsistencias en la lista de nodos activos.
 - Almacenamiento/recuperación eficiente: El almacenamiento de archivos se realiza de forma básica en el sistema de archivos local, sin utilizar estructuras de datos distribuidas o optimizadas.
 - Transferencia de archivos real: La transferencia de archivos se simula, no se realiza una transmisión real de datos entre pares.
