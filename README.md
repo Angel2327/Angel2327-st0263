@@ -14,7 +14,16 @@ En esta actividad se implementó una red P2P con un tracker que facilita el desc
 ## 1.1. Que aspectos cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
 Ejecucion y registro de nodos: Los nodos se inician y registran correctamente con el tracker y actualizan su estado.
 Descubrimiento de nodos: Los nodos pueden solicitar al tracker la información de otros nodos activos para establecer conexiones.
-Intercambio de archivos entre nodos: Una vez que los nodos se han descubierto, se puede establecer comunicación directa entre ellos utilizando gRPC y subir y descargar archivos entre ellos.
+Subida de archivos al sistema.
+Descarga de archivos desde la red.
+Búsqueda de archivos disponibles.
+Registro de pares en el tracker.
+Consulta de pares que poseen un archivo específico.
+Partición de archivos en trozos para la transferencia.
+Comunicación entre pares:
+Uso de gRPC para la comunicación cliente-servidor y entre pares.
+Definición de servicios y mensajes en un archivo .proto.
+Manejo de múltiples peticiones concurrentes en el servidor utilizando ThreadPoolExecutor.
 Despliegue en AWS: Se realizó el despliegue de la red P2P utilizando instancias de AWS, cumpliendo con el requerimiento de entorno distribuido.
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
