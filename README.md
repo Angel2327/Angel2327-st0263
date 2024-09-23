@@ -35,6 +35,7 @@ En esta actividad se implementó una red P2P con un tracker que facilita el desc
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 - Arquitectura: La arquitectura sigue un patrón cliente-servidor dentro de una red P2P. El tracker actúa como servidor de descubrimiento, mientras que los nodos actúan como clientes/servidores. El diseño también utiliza el patrón de comunicación gRPC para permitir el intercambio de datos.
+![Red P2P](https://github.com/user-attachments/assets/e8e9b698-53cd-4727-99a3-89d751e50374)
 #### Patrones y buenas prácticas:
 - Separación de responsabilidades: El tracker solo maneja el descubrimiento y no interviene en la comunicación entre nodos.
 - Uso de hilos (Threads) en los nodos para manejar múltiples conexiones concurrentes.
