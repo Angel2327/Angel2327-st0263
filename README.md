@@ -64,11 +64,11 @@ Los archivos p2p_pb2.py y p2p_pb2_grpc.py son generados automáticamente a parti
 # Organización del código
 #### Estructura de directorios:
 - /src
--   |_> /tracker.py
--   /peer.py``
--   /proto_files/
--   |_> /tracker.proto
--   |_> /peer.proto
+-   |-> /tracker.py
+-   |->/peer.py``
+-   |->/proto_files/
+-   |---> /tracker.proto
+-   |---> /peer.proto
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
