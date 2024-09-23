@@ -1,7 +1,7 @@
 # Defina la versión inicial de la arquitectura y tipo de red P2P, revísela con otros compañeros y reciba retroalimentación del profesor.
-Tipo de red P2P:
+#####  Tipo de red P2P:
 - La arquitectura incluye un tracker centralizado, que facilita el descubrimiento y la coordinación de los nodos.
-- Componentes clave:
+##### Componentes clave:
 - Tracker: Registra nodos activos y proporciona información de otros nodos.
 - Nodo Peer: Actúa como cliente y servidor, intercambiando datos y comunicándose con el tracker para obtener información sobre otros peers.
 - Protocolos de comunicación: Se usa gRPC para facilitar las comunicaciones entre el tracker y los nodos, y también entre los propios nodos.
