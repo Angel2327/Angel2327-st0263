@@ -1,4 +1,4 @@
-Defina la versión inicial de la arquitectura y tipo de red P2P, revísela con otros compañeros y reciba retroalimentación del profesor.
+# Defina la versión inicial de la arquitectura y tipo de red P2P, revísela con otros compañeros y reciba retroalimentación del profesor.
 •	Tipo de red P2P:
 o	La arquitectura incluye un tracker centralizado, que facilita el descubrimiento y la coordinación de los nodos.
 •	Componentes clave:
@@ -6,7 +6,7 @@ o	Tracker: Registra nodos activos y proporciona información de otros nodos.
 o	Nodo Peer: Actúa como cliente y servidor, intercambiando datos y comunicándose con el tracker para obtener información sobre otros peers.
 o	Protocolos de comunicación: Se usa gRPC para facilitar las comunicaciones entre el tracker y los nodos, y también entre los propios nodos.
 
-Defina los servicios específicos que tendrá cada componente del sistema
+# Defina los servicios específicos que tendrá cada componente del sistema
 Tracker:
 Registro de nodos: Mantiene una lista de nodos activos.
 Descubrimiento de nodos: Facilita la obtención de información de otros nodos.
@@ -23,7 +23,7 @@ o	SearchFile(filename): Busca pares que poseen un archivo específico (a través
 o	RetrieveFile(filename): Descarga un archivo completo desde la red (coordinando la descarga de trozos desde múltiples pares).
 gRPC Server: Gestiona la comunicación entre los nodos y el tracker.
 
-Definir el mecanismo de localización basado en índice central o distribuido (ideal distribuido)
+# Definir el mecanismo de localización basado en índice central o distribuido (ideal distribuido)
 Índice centralizado:
 •	El tracker mantiene un índice centralizado que mapea nombres de archivo a listas de pares que poseen esos archivos.
 •	Los pares consultan al tracker para descubrir otros pares que tienen los archivos que desean.
@@ -39,7 +39,7 @@ o	gRPC (o potencialmente un protocolo de transferencia de archivos más eficient
 o	gRPC se utiliza como middleware principal para la comunicación estructurada y la generación de código cliente/servidor.
 o	REST API podría utilizarse para proporcionar una interfaz web para interactuar con el sistema o para exponer funcionalidades a otras aplicaciones.
 
-Plan de Desarrollo
+# Plan de Desarrollo
 1.	Victoria temprana: Comunicación básica entre pares y tracker 
 o	Implementar los servicios gRPC básicos en el tracker y los pares.
 o	Permitir que los pares se registren en el tracker y consulten la lista de pares para un archivo.
