@@ -60,8 +60,9 @@ Los nodos se registran automáticamente en el tracker y comienzan a intercambiar
 #### Otros mencionados en la sección anterior.
 #### Ambiente de ejecución:
 #### AWS EC2 (Ubuntu 20.04)
+#
 
-# IP o nombres de dominio en nube o en la máquina servidor.
+## IP o nombres de dominio en nube o en la máquina servidor.
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
@@ -70,8 +71,6 @@ Los nodos se registran automáticamente en el tracker y comienzan a intercambiar
 ## una mini guia de como un usuario utilizaría el software o la aplicación
 
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
-
-# 5. otra información que considere relevante para esta actividad.
 
 # Referencias:
 ## Choles, J. J. [@johanj.choles5566]. (s/f). Sistema P2P comunicación por API REST y gRPC. Youtube. Recuperado de https://www.youtube.com/watch?v=gJkHndseGgc
