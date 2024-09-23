@@ -1,5 +1,5 @@
 # Defina la versión inicial de la arquitectura y tipo de red P2P, revísela con otros compañeros y reciba retroalimentación del profesor.
-- Tipo de red P2P:
+Tipo de red P2P:
 - La arquitectura incluye un tracker centralizado, que facilita el descubrimiento y la coordinación de los nodos.
 - Componentes clave:
 - Tracker: Registra nodos activos y proporciona información de otros nodos.
@@ -8,19 +8,19 @@
 
 # Defina los servicios específicos que tendrá cada componente del sistema
 Tracker:
-Registro de nodos: Mantiene una lista de nodos activos.
-Descubrimiento de nodos: Facilita la obtención de información de otros nodos.
-Actualización de la red: Proporciona actualizaciones sobre los nodos que se conectan o desconectan.
-o	RegisterPeer(PeerInfo): Registra un nuevo par en el sistema, incluyendo su dirección y los archivos que posee.
-o	QueryPeers(FileRequest): Devuelve una lista de pares que poseen un archivo específico.
+- Registro de nodos: Mantiene una lista de nodos activos.
+- Descubrimiento de nodos: Facilita la obtención de información de otros nodos.
+- Actualización de la red: Proporciona actualizaciones sobre los nodos que se conectan o desconectan.
+- o	RegisterPeer(PeerInfo): Registra un nuevo par en el sistema, incluyendo su dirección y los archivos que posee.
+- o	QueryPeers(FileRequest): Devuelve una lista de pares que poseen un archivo específico.
 Nodo Peer:
-Conexión al tracker: Registra su existencia en el tracker.
-Descubrimiento de pares: Solicita información al tracker sobre otros nodos activos.
-Intercambio de datos: Comunica e intercambia datos directamente con otros nodos.
-o	UploadFile(FileChunk): Sube un trozo de archivo a otro par.
-o	DownloadFile(FileRequest): Descarga un trozo de archivo desde otro par.
-o	SearchFile(filename): Busca pares que poseen un archivo específico (a través del tracker).
-o	RetrieveFile(filename): Descarga un archivo completo desde la red (coordinando la descarga de trozos desde múltiples pares).
+- Conexión al tracker: Registra su existencia en el tracker.
+- Descubrimiento de pares: Solicita información al tracker sobre otros nodos activos.
+- Intercambio de datos: Comunica e intercambia datos directamente con otros nodos.
+- o	UploadFile(FileChunk): Sube un trozo de archivo a otro par.
+- o	DownloadFile(FileRequest): Descarga un trozo de archivo desde otro par.
+- o	SearchFile(filename): Busca pares que poseen un archivo específico (a través del tracker).
+- o	RetrieveFile(filename): Descarga un archivo completo desde la red (coordinando la descarga de trozos desde múltiples pares).
 gRPC Server: Gestiona la comunicación entre los nodos y el tracker.
 
 # Definir el mecanismo de localización basado en índice central o distribuido (ideal distribuido)
