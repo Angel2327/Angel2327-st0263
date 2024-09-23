@@ -6,8 +6,8 @@
 
 # Profesor: Juan Carlos Montoya Mendoza, jcmontoy@eafit.edu.co
 
-# Reto N1. Aplicaciones P2P
-#
+# Reto N1. Aplicaciones P2P`
+#`
 # 1. breve descripción de la actividad
 En esta actividad se implementó una red P2P con un tracker que facilita el descubrimiento de nodos. Cada nodo actúa tanto como cliente y servidor, permitiendo la comunicación directa entre nodos a través de gRPC. La solución fue diseñada, desarrollada y probada en un ambiente distribuido utilizando contenedores Docker desplegados en AWS.
 
@@ -30,12 +30,12 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-Lenguaje de programación: Python 3.9
-Librerías y paquetes:
-grpcio (v1.41.0): Para la implementación de las comunicaciones gRPC.
-protobuf (v3.17.3): Para serialización de datos entre los nodos.
-docker (v20.10.8): Para contenedores y despliegue.
-Otros: threading, socket, os, json para el manejo interno de la red P2P.
+#### Lenguaje de programación: Python 3.9
+#### Librerías y paquetes:
+#### grpcio (v1.41.0): Para la implementación de las comunicaciones gRPC.
+#### protobuf (v3.17.3): Para serialización de datos entre los nodos.
+#### docker (v20.10.8): Para contenedores y despliegue.
+#### Otros: threading, socket, os, json para el manejo interno de la red P2P.
 
 ## detalles del desarrollo.
 Los nodos se registran automáticamente en el tracker y comienzan a intercambiar datos con otros nodos una vez descubiertos.
@@ -43,23 +43,23 @@ Los nodos se registran automáticamente en el tracker y comienzan a intercambiar
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
 # Organización del código
-Estructura de directorios:
-/src
-    /tracker.py
-    /peer.py
-    /proto_files/
-        /tracker.proto
-        /peer.proto
+#### Estructura de directorios:
+#### /src
+   ####  /tracker.py
+   ####  /peer.py
+   ####  /proto_files/
+   ####      /tracker.proto
+   ####      /peer.proto
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-## Lenguaje de programación: Python 3.9
-### Librerías:
-grpcio (v1.41.0)
-protobuf (v3.17.3)
-Otros mencionados en la sección anterior.
-Ambiente de ejecución:
-AWS EC2 (Ubuntu 20.04)
+#### Lenguaje de programación: Python 3.9
+#### Librerías:
+#### grpcio (v1.41.0)
+#### protobuf (v3.17.3)
+#### Otros mencionados en la sección anterior.
+#### Ambiente de ejecución:
+#### AWS EC2 (Ubuntu 20.04)
 
 # IP o nombres de dominio en nube o en la máquina servidor.
 
