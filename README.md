@@ -73,5 +73,5 @@ Los nodos se registran automáticamente en el tracker y comienzan a intercambiar
 ## opcionalmente - si quiere mostrar resultados o pantallazos 
 
 # Referencias:
-## Choles, J. J. [@johanj.choles5566]. (s/f). Sistema P2P comunicación por API REST y gRPC. Youtube. Recuperado de https://www.youtube.com/watch?v=gJkHndseGgc
-## Feregrino [@feregri_no]. (s/f). RPC - Usando gRPC en Python y C#. Youtube. Recuperado de https://www.youtube.com/watch?v=2oY9PbaE71A
+### Choles, J. J. [@johanj.choles5566]. (s/f). Sistema P2P comunicación por API REST y gRPC. Youtube. Recuperado de https://www.youtube.com/watch?v=gJkHndseGgc
+### Feregrino [@feregri_no]. (s/f). RPC - Usando gRPC en Python y C#. Youtube. Recuperado de https://www.youtube.com/watch?v=2oY9PbaE71A
