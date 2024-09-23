@@ -7,13 +7,13 @@ Tipo de red P2P:
 - Protocolos de comunicación: Se usa gRPC para facilitar las comunicaciones entre el tracker y los nodos, y también entre los propios nodos.
 
 # Defina los servicios específicos que tendrá cada componente del sistema
-Tracker:
+##### Tracker:
 - Registro de nodos: Mantiene una lista de nodos activos.
 - Descubrimiento de nodos: Facilita la obtención de información de otros nodos.
 - Actualización de la red: Proporciona actualizaciones sobre los nodos que se conectan o desconectan.
 - o	RegisterPeer(PeerInfo): Registra un nuevo par en el sistema, incluyendo su dirección y los archivos que posee.
 - o	QueryPeers(FileRequest): Devuelve una lista de pares que poseen un archivo específico.
-Nodo Peer:
+##### Nodo Peer:
 - Conexión al tracker: Registra su existencia en el tracker.
 - Descubrimiento de pares: Solicita información al tracker sobre otros nodos activos.
 - Intercambio de datos: Comunica e intercambia datos directamente con otros nodos.
@@ -21,7 +21,7 @@ Nodo Peer:
 - o	DownloadFile(FileRequest): Descarga un trozo de archivo desde otro par.
 - o	SearchFile(filename): Busca pares que poseen un archivo específico (a través del tracker).
 - o	RetrieveFile(filename): Descarga un archivo completo desde la red (coordinando la descarga de trozos desde múltiples pares).
-gRPC Server: Gestiona la comunicación entre los nodos y el tracker.
+##### gRPC Server: Gestiona la comunicación entre los nodos y el tracker.
 
 # Definir el mecanismo de localización basado en índice central o distribuido (ideal distribuido)
 Índice centralizado:
