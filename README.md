@@ -74,7 +74,6 @@ En esta actividad se implementó una red P2P con un tracker que facilita el desc
 - protobuf (v3.17.3)
 - Otros mencionados en la sección anterior.
 - Ambiente de ejecución:
-- AWS EC2 (Ubuntu 20.04)
 #
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
