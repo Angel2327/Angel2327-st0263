@@ -82,8 +82,10 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 Los puertos son configurados por gRcp, no se cuenta con base de datos pues cada peer sube y baja archivos entre ellos, y le preguntan al tracker donde están ubicados
 
 ## como se lanza el servidor.
+Para lanzar el sistema lo primero es correr el tracker "python tracker.py" luego se corre la cantidad de peers que se desee "python peer.py" (correr al menos 2). Luego la consola de los peers presenta 3 comandos, upload, search y download; para subir un archivo a la red escribimos upload en consola, luego copiamos la dirección del archivo desde el explorador de archivos de windows. Para buscar o descargar un archivo que se encuentra en la red, copiaremos el comando respectivo y escribimos el nombre y tipo de archivo del archivo que se busca.
 
-## una mini guia de como un usuario utilizaría el software o la aplicación
+# mostrar resultados o pantallazos
+![WhatsApp Image 2024-09-22 at 11 20 12 PM](https://github.com/user-attachments/assets/59444d97-bbcc-478f-9286-b99668e238e8)
 
 # Referencias:
 ### Choles, J. J. [@johanj.choles5566]. (s/f). Sistema P2P comunicación por API REST y gRPC. Youtube. Recuperado de https://www.youtube.com/watch?v=gJkHndseGgc
