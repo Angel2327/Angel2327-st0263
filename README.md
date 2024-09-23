@@ -30,7 +30,8 @@ En esta actividad se implementó una red P2P con un tracker que facilita el desc
 - Transferencia de archivos real: La transferencia de archivos se simula, no se realiza una transmisión real de datos entre pares.
 - Replicación robusta: La replicación de archivos se implementa de forma básica y podría mejorarse para garantizar la disponibilidad y tolerancia a fallos.
 - Sistema completamente distribuido y descentralizado: El uso de un tracker centralizado introduce un punto único de fallo.
-- No se logro el despliegue en AWS. 
+- Se hizo el intento pero no se logro el despliegue en AWS.
+-  ![WhatsApp Image 2024-09-22 at 11 23 51 PM](https://github.com/user-attachments/assets/b8c1eb6f-5b23-4e4c-b50f-b317c6222db0)
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 Arquitectura: La arquitectura sigue un patrón cliente-servidor dentro de una red P2P. El tracker actúa como servidor de descubrimiento, mientras que los nodos actúan como clientes/servidores. El diseño también utiliza el patrón de comunicación gRPC para permitir el intercambio de datos.
