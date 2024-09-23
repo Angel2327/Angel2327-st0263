@@ -1,10 +1,10 @@
 # Defina la versión inicial de la arquitectura y tipo de red P2P, revísela con otros compañeros y reciba retroalimentación del profesor.
-•	Tipo de red P2P:
-o	La arquitectura incluye un tracker centralizado, que facilita el descubrimiento y la coordinación de los nodos.
-•	Componentes clave:
-o	Tracker: Registra nodos activos y proporciona información de otros nodos.
-o	Nodo Peer: Actúa como cliente y servidor, intercambiando datos y comunicándose con el tracker para obtener información sobre otros peers.
-o	Protocolos de comunicación: Se usa gRPC para facilitar las comunicaciones entre el tracker y los nodos, y también entre los propios nodos.
+- Tipo de red P2P:
+- La arquitectura incluye un tracker centralizado, que facilita el descubrimiento y la coordinación de los nodos.
+- Componentes clave:
+- Tracker: Registra nodos activos y proporciona información de otros nodos.
+- Nodo Peer: Actúa como cliente y servidor, intercambiando datos y comunicándose con el tracker para obtener información sobre otros peers.
+- Protocolos de comunicación: Se usa gRPC para facilitar las comunicaciones entre el tracker y los nodos, y también entre los propios nodos.
 
 # Defina los servicios específicos que tendrá cada componente del sistema
 Tracker:
@@ -28,7 +28,7 @@ gRPC Server: Gestiona la comunicación entre los nodos y el tracker.
 •	El tracker mantiene un índice centralizado que mapea nombres de archivo a listas de pares que poseen esos archivos.
 •	Los pares consultan al tracker para descubrir otros pares que tienen los archivos que desean.
 Defina las interacciones entre componentes, los tipos de comunicaciones y tipo de middleware específico que va a emplear (REST API, gRPC), debe emplear todos estos middlewares.
-•	Interacciones:
+- Interacciones:
 o	Los pares se registran en el tracker al iniciar.
 o	Los pares consultan al tracker para buscar archivos y obtener listas de pares.
 o	Los pares se comunican directamente entre sí para transferir trozos de archivos.
