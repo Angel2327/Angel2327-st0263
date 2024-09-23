@@ -11,33 +11,28 @@ Tipo de red P2P:
 - Registro de nodos: Mantiene una lista de nodos activos.
 - Descubrimiento de nodos: Facilita la obtención de información de otros nodos.
 - Actualización de la red: Proporciona actualizaciones sobre los nodos que se conectan o desconectan.
-- o	RegisterPeer(PeerInfo): Registra un nuevo par en el sistema, incluyendo su dirección y los archivos que posee.
-- o	QueryPeers(FileRequest): Devuelve una lista de pares que poseen un archivo específico.
 ##### Nodo Peer:
 - Conexión al tracker: Registra su existencia en el tracker.
 - Descubrimiento de pares: Solicita información al tracker sobre otros nodos activos.
-- Intercambio de datos: Comunica e intercambia datos directamente con otros nodos.
-- o	UploadFile(FileChunk): Sube un trozo de archivo a otro par.
-- o	DownloadFile(FileRequest): Descarga un trozo de archivo desde otro par.
-- o	SearchFile(filename): Busca pares que poseen un archivo específico (a través del tracker).
-- o	RetrieveFile(filename): Descarga un archivo completo desde la red (coordinando la descarga de trozos desde múltiples pares).
+- Intercambio de archivos: Comunica e intercambia archivos directamente con otros nodos.
 ##### gRPC Server: Gestiona la comunicación entre los nodos y el tracker.
 
 # Definir el mecanismo de localización basado en índice central o distribuido (ideal distribuido)
-Índice centralizado:
-•	El tracker mantiene un índice centralizado que mapea nombres de archivo a listas de pares que poseen esos archivos.
-•	Los pares consultan al tracker para descubrir otros pares que tienen los archivos que desean.
-Defina las interacciones entre componentes, los tipos de comunicaciones y tipo de middleware específico que va a emplear (REST API, gRPC), debe emplear todos estos middlewares.
-- Interacciones:
-o	Los pares se registran en el tracker al iniciar.
-o	Los pares consultan al tracker para buscar archivos y obtener listas de pares.
-o	Los pares se comunican directamente entre sí para transferir trozos de archivos.
-•	Comunicaciones:
-o	gRPC para la comunicación cliente-servidor entre pares y el tracker.
-o	gRPC (o potencialmente un protocolo de transferencia de archivos más eficiente) para la comunicación directa entre pares.
-•	Middleware:
-o	gRPC se utiliza como middleware principal para la comunicación estructurada y la generación de código cliente/servidor.
-o	REST API podría utilizarse para proporcionar una interfaz web para interactuar con el sistema o para exponer funcionalidades a otras aplicaciones.
+##### Índice centralizado:
+-	El tracker mantiene un índice centralizado que mapea nombres de archivo a listas de pares que poseen esos archivos.
+-	Los pares consultan al tracker para descubrir otros pares que tienen los archivos que desean.
+
+# Defina las interacciones entre componentes, los tipos de comunicaciones y tipo de middleware específico que va a emplear (REST API, gRPC), debe emplear todos estos middlewares.
+##### Interacciones:
+-	Los pares se registran en el tracker al iniciar.
+-	Los pares consultan al tracker para buscar archivos y obtener listas de pares.
+-	Los pares se comunican directamente entre sí para transferir trozos de archivos.
+##### Comunicaciones:
+-	gRPC para la comunicación cliente-servidor entre pares y el tracker.
+-	gRPC (o potencialmente un protocolo de transferencia de archivos más eficiente) para la comunicación directa entre pares.
+##### Middleware:
+-	gRPC se utiliza como middleware principal para la comunicación estructurada y la generación de código cliente/servidor.
+-	REST API podría utilizarse para proporcionar una interfaz web para interactuar con el sistema o para exponer funcionalidades a otras aplicaciones.
 
 # Plan de Desarrollo
 1.	Victoria temprana: Comunicación básica entre pares y tracker 
