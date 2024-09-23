@@ -53,8 +53,8 @@ Estructura de directorios:
 
 # 4. Descripción del ambiente de EJECUCIÓN (en producción) lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-Lenguaje de programación: Python 3.9
-Librerías:
+## Lenguaje de programación: Python 3.9
+### Librerías:
 grpcio (v1.41.0)
 protobuf (v3.17.3)
 Otros mencionados en la sección anterior.
