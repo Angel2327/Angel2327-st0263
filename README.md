@@ -79,12 +79,11 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 #
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
+Los puertos son configurados por gRcp, no se cuenta con base de datos pues cada peer sube y baja archivos entre ellos, y le preguntan al tracker donde están ubicados
 
 ## como se lanza el servidor.
 
 ## una mini guia de como un usuario utilizaría el software o la aplicación
-
-## opcionalmente - si quiere mostrar resultados o pantallazos 
 
 # Referencias:
 ### Choles, J. J. [@johanj.choles5566]. (s/f). Sistema P2P comunicación por API REST y gRPC. Youtube. Recuperado de https://www.youtube.com/watch?v=gJkHndseGgc
