@@ -20,7 +20,6 @@ En esta actividad se implementó una red P2P con un tracker que facilita el desc
 - Registro de pares en el tracker.
 - Consulta de pares que poseen un archivo específico.
 - Partición de archivos en trozos para la transferencia.
-### - Comunicación entre pares:
 - Uso de gRPC para la comunicación cliente-servidor y entre pares.
 - Definición de servicios y mensajes en un archivo .proto.
 - Manejo de múltiples peticiones concurrentes en el servidor utilizando ThreadPoolExecutor.
@@ -44,7 +43,7 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
 ### - Lenguaje de programación: Python 3.x
-### - Librerías:
+#### Librerías:
 - grpc (versión 1.66.1 o superior)
 - protobuf (versión 3.x)
 - concurrent.futures
@@ -55,13 +54,11 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 - queue
 
 ## detalles del desarrollo.
-El código del cliente y del servidor se encuentra en los archivos peer_client.py y tracker_server.py, respectivamente.
-El archivo p2p.proto define los servicios gRPC, los mensajes y los tipos de datos utilizados para la comunicación.
-Los archivos p2p_pb2.py y p2p_pb2_grpc.py son generados automáticamente a partir de p2p.proto y contienen las clases y métodos necesarios para interactuar con los servicios gRPC.
+- El código del cliente y del servidor se encuentra en los archivos peer_client.py y tracker_server.py, respectivamente.
+- El archivo p2p.proto define los servicios gRPC, los mensajes y los tipos de datos utilizados para la comunicación.
+- Los archivos p2p_pb2.py y p2p_pb2_grpc.py son generados automáticamente a partir de p2p.proto y contienen las clases y métodos necesarios para interactuar con los servicios gRPC.
 
-## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
-
-# Organización del código
+## Organización del código
 #### Estructura de directorios:
 - /src
 - /tracker.py
@@ -94,3 +91,5 @@ Los archivos p2p_pb2.py y p2p_pb2_grpc.py son generados automáticamente a parti
 # Referencias:
 ### Choles, J. J. [@johanj.choles5566]. (s/f). Sistema P2P comunicación por API REST y gRPC. Youtube. Recuperado de https://www.youtube.com/watch?v=gJkHndseGgc
 ### Feregrino [@feregri_no]. (s/f). RPC - Usando gRPC en Python y C#. Youtube. Recuperado de https://www.youtube.com/watch?v=2oY9PbaE71A
+### gRPC Python Quickstart: https://grpc.io/docs/languages/python/quickstart/
+### Protobuf Language Guide: https://developers.google.com/protocol-buffers/docs/proto3
