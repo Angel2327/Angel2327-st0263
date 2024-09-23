@@ -1,7 +1,7 @@
 # Info de la materia: ST0263: Tópicos Especiales en Telemática
 #
 # Estudiante(s):
-### Angel Martinez Doria, admartinedeafir.edu.co
+### Angel Martinez Doria, admartined@eafit.edu.co
 ### David Londoño Sanchez, dlondonos2@eafit.edu.co
 
 # Profesor: Juan Carlos Montoya Mendoza, jcmontoy@eafit.edu.co
