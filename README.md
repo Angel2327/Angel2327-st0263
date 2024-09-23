@@ -27,7 +27,11 @@ Manejo de múltiples peticiones concurrentes en el servidor utilizando ThreadPoo
 Despliegue en AWS: Se realizó el despliegue de la red P2P utilizando instancias de AWS, cumpliendo con el requerimiento de entorno distribuido.
 
 ## 1.2. Que aspectos NO cumplió o desarrolló de la actividad propuesta por el profesor (requerimientos funcionales y no funcionales)
-Mecanismos de desconexcion para tolerancia de fallas: El tracker no cuenta con un mecanismo robusto para manejar caídas de nodos o desconexiones inesperadas, lo que podría generar inconsistencias en la lista de nodos activos y con el tracker se genera un punto de falla y no tiene replicación ni un mecanismo de respaldo en caso de fallo.
+Mecanismos de desconexion para tolerancia de fallas: El tracker no cuenta con un mecanismo robusto para manejar caídas de nodos o desconexiones inesperadas, lo que podría generar inconsistencias en la lista de nodos activos.
+Almacenamiento/recuperación eficiente: El almacenamiento de archivos se realiza de forma básica en el sistema de archivos local, sin utilizar estructuras de datos distribuidas o optimizadas.
+Transferencia de archivos real: La transferencia de archivos se simula, no se realiza una transmisión real de datos entre pares.
+Replicación robusta: La replicación de archivos se implementa de forma básica y podría mejorarse para garantizar la disponibilidad y tolerancia a fallos.
+Sistema completamente distribuido y descentralizado: El uso de un tracker centralizado introduce un punto único de fallo.
 
 # 2. información general de diseño de alto nivel, arquitectura, patrones, mejores prácticas utilizadas.
 Arquitectura: La arquitectura sigue un patrón cliente-servidor dentro de una red P2P. El tracker actúa como servidor de descubrimiento, mientras que los nodos actúan como clientes/servidores. El diseño también utiliza el patrón de comunicación gRPC para permitir el intercambio de datos.
@@ -39,15 +43,21 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 
 # 3. Descripción del ambiente de desarrollo y técnico: lenguaje de programación, librerias, paquetes, etc, con sus numeros de versiones.
 
-#### Lenguaje de programación: Python 3.9
-#### Librerías y paquetes:
-#### grpcio (v1.41.0): Para la implementación de las comunicaciones gRPC.
-#### protobuf (v3.17.3): Para serialización de datos entre los nodos.
-#### docker (v20.10.8): Para contenedores y despliegue.
-#### Otros: threading, socket, os, json para el manejo interno de la red P2P.
+#### Lenguaje de programación: Python 3.x
+#### Librerías:
+#### grpc (versión 1.66.1 o superior)
+#### protobuf (versión 3.x)
+#### concurrent.futures
+#### threading
+#### os
+#### sys
+#### socket
+#### queue
 
 ## detalles del desarrollo.
-Los nodos se registran automáticamente en el tracker y comienzan a intercambiar datos con otros nodos una vez descubiertos.
+El código del cliente y del servidor se encuentra en los archivos peer_client.py y tracker_server.py, respectivamente.
+El archivo p2p.proto define los servicios gRPC, los mensajes y los tipos de datos utilizados para la comunicación.
+Los archivos p2p_pb2.py y p2p_pb2_grpc.py son generados automáticamente a partir de p2p.proto y contienen las clases y métodos necesarios para interactuar con los servicios gRPC.
 
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
