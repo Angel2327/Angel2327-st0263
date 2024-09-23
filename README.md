@@ -78,8 +78,6 @@ Despliegue distribuido utilizando AWS para simular un entorno de red P2P realist
 - AWS EC2 (Ubuntu 20.04)
 #
 
-## IP o nombres de dominio en nube o en la máquina servidor.
-
 ## descripción y como se configura los parámetros del proyecto (ej: ip, puertos, conexión a bases de datos, variables de ambiente, parámetros, etc)
 
 ## como se lanza el servidor.
